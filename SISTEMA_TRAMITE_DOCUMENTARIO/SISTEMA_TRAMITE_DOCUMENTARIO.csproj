@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E132631B-ED79-4D32-9228-78DA28185A18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SISTEMA_TRAMITE_DOCUMENTARIO</RootNamespace>
+    <AssemblyName>SISTEMA_TRAMITE_DOCUMENTARIO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetTramite.cs">
+      <DependentUpon>DataSetTramite.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetTramite.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetTramite.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAREAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAREAS.Designer.cs">
+      <DependentUpon>FRMAREAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMBUSCARAREA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMBUSCARAREA.Designer.cs">
+      <DependentUpon>FRMBUSCARAREA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMBUSCARDOCEXTERNO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMBUSCARDOCEXTERNO.Designer.cs">
+      <DependentUpon>FRMBUSCARDOCEXTERNO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMBUSCARDOCINTERNO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMBUSCARDOCINTERNO.Designer.cs">
+      <DependentUpon>FRMBUSCARDOCINTERNO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDOCUMENTOEXTERNO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDOCUMENTOEXTERNO.Designer.cs">
+      <DependentUpon>FRMDOCUMENTOEXTERNO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMDOCUMETOINTERNO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMDOCUMETOINTERNO.Designer.cs">
+      <DependentUpon>FRMDOCUMETOINTERNO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMLOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMLOGIN.Designer.cs">
+      <DependentUpon>FRMLOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMMENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMENU.Designer.cs">
+      <DependentUpon>FRMMENU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMRECUPERARCONTRASEÑA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMRECUPERARCONTRASEÑA.Designer.cs">
+      <DependentUpon>FRMRECUPERARCONTRASEÑA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSEGUIMIENTODOCUMENTOEXTERNO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSEGUIMIENTODOCUMENTOEXTERNO.Designer.cs">
+      <DependentUpon>FRMSEGUIMIENTODOCUMENTOEXTERNO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSEGUIMIENTODOCUMENTOINTERNO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSEGUIMIENTODOCUMENTOINTERNO.Designer.cs">
+      <DependentUpon>FRMSEGUIMIENTODOCUMENTOINTERNO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMUSUARIOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMUSUARIOS.Designer.cs">
+      <DependentUpon>FRMUSUARIOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRMAREAS.resx">
+      <DependentUpon>FRMAREAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMBUSCARAREA.resx">
+      <DependentUpon>FRMBUSCARAREA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMBUSCARDOCEXTERNO.resx">
+      <DependentUpon>FRMBUSCARDOCEXTERNO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMBUSCARDOCINTERNO.resx">
+      <DependentUpon>FRMBUSCARDOCINTERNO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDOCUMENTOEXTERNO.resx">
+      <DependentUpon>FRMDOCUMENTOEXTERNO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMDOCUMETOINTERNO.resx">
+      <DependentUpon>FRMDOCUMETOINTERNO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMLOGIN.resx">
+      <DependentUpon>FRMLOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMENU.resx">
+      <DependentUpon>FRMMENU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMRECUPERARCONTRASEÑA.resx">
+      <DependentUpon>FRMRECUPERARCONTRASEÑA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSEGUIMIENTODOCUMENTOEXTERNO.resx">
+      <DependentUpon>FRMSEGUIMIENTODOCUMENTOEXTERNO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSEGUIMIENTODOCUMENTOINTERNO.resx">
+      <DependentUpon>FRMSEGUIMIENTODOCUMENTOINTERNO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMUSUARIOS.resx">
+      <DependentUpon>FRMUSUARIOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataSetTramite.xsc">
+      <DependentUpon>DataSetTramite.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetTramite.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetTramite.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetTramite.xss">
+      <DependentUpon>DataSetTramite.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utea-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo EPISeI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sistemas-de-gestion-empresarial.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add List_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit File_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel File_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save Archive_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete File_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Shield_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shutdown_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gmail_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gmail_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Property_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group Message_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\View File_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dossier_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings 3_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Folder_48px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
